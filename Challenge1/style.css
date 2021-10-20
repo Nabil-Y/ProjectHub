@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg) repeat-x;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 30%;
+    min-width: 405px;
+    max-width: 640px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    justify-content: center;
+    box-shadow: 0 20px 50px -30px hsl(224, 23%, 55%, .8);
+    margin: 100px 0;
+    }
+
+.hero {
+    padding: 0;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+aside {
+    padding: 0 2.5rem 1rem 2.5rem;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    background: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 10px 20px;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 0;
+}
+
+
+.info {
+    text-align: left;
+    flex: 60%;
+    margin-left: 10px;
+}
+
+.info p {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.plan a {
+    text-decoration: underline;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    font-size: 0.9rem;
+    transition: all 0.8s ease;
+}
+
+.plan a:hover {
+    opacity: 0.6;
+    text-decoration-color: transparent;
+}
+
+.btn {
+    background: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 20px 40px -20px hsl(245, 75%, 52%);
+    transition: opacity 0.8s ease;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+a .btn {
+    color: white;
+    font-weight: 700;
+}
+
+a + p {
+    font-weight: 700;
+    padding: 20px;
+}
+
+p a {
+    color: hsl(224, 23%, 55%);
+    transition: color 0.8s ease;
+}
+
+p a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+
+.attribution {
+    font-size: 11px; text-align: center; 
+    }
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:540px) {
+    body {
+        background: hsl(225, 100%, 94%) url(./images/pattern-background-mobile.svg) repeat-x;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .plan {
+        padding: 10px 10px;
+    }
+    
+    main {
+       width: 75%;
+       min-width: 340px;
+       max-width: 640px;
+    }
+
+    aside {
+        padding: 2rem 2rem 1rem 2rem;
+    }
+}
