@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/*     font-family: 'Open Sans', sans-serif; /// font-family: 'Poppins', sans-serif; */
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    font-family: 'Poppins', sans-serif;
+    background: url(./images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 { 
+    font-size: 2.2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 3.5rem;
+} 
+
+main {
+    display: flex;
+}
+
+header {
+    align-self: flex-start;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    padding: 2rem 2rem 2rem 0;
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+.logo {
+    max-width: 12rem;
+    min-width: 3rem;
+}
+
+section {
+    align-self: flex-end;
+    display: flex;
+}
+
+article {
+    padding: 3rem 0 2rem 2rem;
+    width: 100%;
+}
+
+.btn {
+    background: white;
+    color: hsl(257, 40%, 49%);
+    padding: 0.8rem 4rem;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: hsl(300, 69%, 71%);
+    color: white;
+}
+
+a {
+text-decoration: none;
+}
+
+
+.social {
+    font-size: 1rem;
+    margin: 0.4rem;
+    transition: all 0.5s ease;
+}
+
+.social:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.social:hover .far::before {
+    border: solid 2px hsl(300, 69%, 71%);
+}
+
+.far::before { 
+    color: transparent;
+    border: solid 2px white;
+    border-radius: 40px;
+    transition: all 0.5s ease;
+}
+
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a {
+    color: hsl(300, 69%, 71%); 
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        background: url(./images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);  
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .wrapper {
+        padding: 5%;
+    }
+
+    main {
+        flex-flow: column;
+    }
+
+    .hero img, article {
+        padding: 0;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    article {
+        padding-bottom: 3rem;
+    }
+
+    section {
+        padding-top: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero {
+            display: flex;
+            justify-content: center;
+    }
+
+    .hero, img {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .logo {
+        max-width: 8rem;
+        min-width: 2rem;
+    }
+}
+
