@@ -90,8 +90,16 @@ a {
     ;
 }
 
+.card:nth-of-type(even) {
+    flex-flow: row-reverse;
+}
+
 @media screen and (max-width:800px) {
     .card {
+        flex-flow: column;
+    }
+
+    .card:nth-of-type(even) {
         flex-flow: column;
     }
 
