@@ -18,6 +18,7 @@ body {
     margin: 3%;
     font-family: 'Poppins', sans-serif;
     background: url(./images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+    background-size: cover;
     color: white;
 }
 
@@ -64,7 +65,12 @@ header {
 
 aside {
     align-self: flex-end;
+}
+
+ul {
     display: flex;
+    list-style-type: none;
+    padding: 0;
 }
 
 article {
@@ -96,6 +102,7 @@ text-decoration: none;
     font-size: 1rem;
     margin: 0.4rem;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .social:hover {
@@ -153,11 +160,12 @@ p {
         padding-bottom: 3rem;
     }
 
-    aside {
+    ul {
         padding-top: 4rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    }
+
+    aside {
+        align-self: center;
     }
 
     .hero {
