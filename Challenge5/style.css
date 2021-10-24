@@ -98,7 +98,7 @@ h2 {
     width: 100%;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px,1fr));
+    grid-template-columns: repeat( 3, minmax(340px,1fr));
     column-gap: 2rem;
 }
 
@@ -118,6 +118,7 @@ h2 {
     padding: 2rem;
     min-height: 200px;
     min-width: 340px;
+    max-width: 700px;
     background: hsl(300, 43%, 22%);
     border-radius: 10px;
     color: hsl(300, 24%, 96%);
@@ -149,6 +150,15 @@ h2 {
     margin-bottom: 5px;
     color: hsl(300, 24%, 96%);
 }
+
+@media  screen and (max-width:1200px) {
+    .testimonies {
+        grid-template-columns: auto;
+        grid-template-rows: repeat( 3, minmax(200px,500));
+        justify-content: center;
+    }
+}
+
 
 @media  screen and (max-width:1020px) {
 
