@@ -1,6 +1,6 @@
 # Welcome to my personal project hub
 
-All my current side projects from frontendmentor are shown here
+All my personal projects can be found here
 
 I was thinking that one repo per project might be too chaotic...
  
