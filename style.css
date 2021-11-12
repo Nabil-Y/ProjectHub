@@ -87,7 +87,12 @@ a {
     border-radius: 40px;
     padding: 2rem;
     margin-left: 4rem;
+    transition: all 0.3s ease-in-out;
     ;
+}
+
+.preview:hover {
+    transform: scale(1.05);
 }
 
 .card:nth-of-type(even) {
