@@ -6,9 +6,9 @@ I was thinking that one repo per project might be too chaotic...
  
 So I wanted to try and group all my projects in one repo and showcase them with Github Pages
 
-One of the goals of this project is to challenge myself because I'm just starting with Github and I don't know a lot
+The goal of this project is to challenge myself to learn more about Github and create a portfolio hosted by Github Pages
 
-So I want to learn more about Github and create a mini portfolio hosted by Github Pages
+Everyone will be able to follow my progress in learning web development and check my projects here
 
 ### [One page to share them all!](https://nabil-y.github.io/ProjectHub/)
 
