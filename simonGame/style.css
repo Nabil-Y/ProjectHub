@@ -53,6 +53,7 @@ h1 {
 }
 
 button {
+  -webkit-tap-highlight-color: transparent;
   display: inline-block;
   border: solid 10px black;
   border-radius: 20%;
@@ -64,10 +65,6 @@ button {
   padding-top: 15%;
   transition: all ease-in-out 0.5s;
   cursor: pointer;
-}
-
-button:focus {
-  outline: none !important;
 }
 
 .activation {
