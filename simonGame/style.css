@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #011F3F;
+  transition: all ease-in-out 0.5s;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  width: 40%;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: #FEF2BF;
+  width: 50%;
+  min-width: 350px;
+}
+
+.settings p {
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #FEF2BF;
+  margin: 1rem;
+}
+
+#title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.4rem;
+  margin: 3rem;
+  color: #FEF2BF;
+  min-width: 350px;
+}
+
+button {
+  display: inline-block;
+  border: solid 10px black;
+  border-radius: 20%;
+  width: 150px;
+  height: 150px;
+  margin: 12px;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 15%;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.activation {
+  filter: brightness(120%) saturate(120%);
+  transform: scale(1.1);
+}
+
+#green {
+  background: rgb(22, 214, 86);
+}
+
+#red {
+  background: rgb(206, 41, 41);
+}
+
+#yellow {
+  background: rgb(255, 219, 14);
+}
+
+#blue {
+  background: rgb(2, 120, 255);
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+.toggle {
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleInput:checked ~ .toggleFill {
+  background: rgb(0, 228, 133);
+}
+
+.toggleFill {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  background: rgb(184, 184, 184);
+  transition:  all 0.2s ease-in-out;
+}
+
+.toggleFill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s;
+}
+
+.toggleInput:checked ~ .toggleFill::after {
+  transform: translateX(30px);
+}
