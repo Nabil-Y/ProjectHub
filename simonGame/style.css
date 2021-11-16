@@ -66,6 +66,10 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
 .activation {
   filter: brightness(120%) saturate(120%);
   transform: scale(1.1);
