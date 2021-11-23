@@ -25,14 +25,63 @@ body {
     color: hsl(120,100%,97%);
     }
 
-main {
+.mainwrapper {
     margin: 6rem 0;
+}
+
+article {
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+.hide {
+    opacity: 0;
+    max-height: 0;
+}
+
+button {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    border: none;
+    border-bottom: solid 2px hsl(157,100%,49%);
+    color: hsl(157,100%,49%);
+    font-weight: bold;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+button::after {
+    position: absolute;
+    right: 10px;
+    content: '\002B';
+    color: hsl(157,100%,49%);
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover::after {
+    color: hsl(275,100%,70%);
+}
+
+.active::after {
+    content: "\2212";
+    color: hsl(275,100%,70%);
+}
+
+button:hover, .active {
+    color: hsl(275,100%,70%);
+    border-bottom: solid 2px hsl(275,100%,70%);
 }
 
 .profile-pic {
     border-radius: 360px;
-    max-height: 20rem;
-    max-width: 20rem;
+    max-height: 15rem;
+    max-width: 15rem;
     margin: auto;
     display: block;
 }
