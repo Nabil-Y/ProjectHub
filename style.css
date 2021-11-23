@@ -23,6 +23,7 @@ body {
     font-family: 'Lato', sans-serif;
     background: linear-gradient( 45deg, hsl(240,100%,25%), hsl(275,100%,25%));
     color: hsl(120,100%,97%);
+    -webkit-tap-highlight-color: transparent;
     }
 
 .mainwrapper {
