@@ -65,16 +65,12 @@ button::after {
     transition: all 0.5s ease-in-out;
 }
 
-button:hover::after {
-    color: hsl(275,100%,70%);
-}
-
 .active::after {
     content: "\2212";
     color: hsl(275,100%,70%);
 }
 
-button:hover, .active {
+.active {
     color: hsl(275,100%,70%);
     border-bottom: solid 2px hsl(275,100%,70%);
 }
